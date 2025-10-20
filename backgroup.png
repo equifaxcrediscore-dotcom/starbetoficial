@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Star Bet Oficial 💰</title>
+  <style>
+    /* Reset simple */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    /* Fondo con imagen (coloca background.png en la misma carpeta) */
+    .bg {
+      position: fixed;
+      inset: 0;
+      background-image: url('background.png'); /* <- reemplaza la ruta si usas otro nombre */
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      filter: saturate(0.95) contrast(0.98);
+      z-index: -2;
+    }
+
+    /* Overlay oscuro para legibilidad */
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(2,6,23,0.55) 0%, rgba(3,10,35,0.75) 100%);
+      z-index: -1;
+    }
+
+    /* Contenedor centrado */
+    .container {
+      min-height: 100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card {
+      max-width: 820px;
+      width: 100%;
+      padding: 36px;
+      border-radius: 14px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(2,8,30,0.6);
+      color: #ffffff;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4.5vw, 48px);
+      color: #ffd24a;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+    }
+
+    p.lead {
+      color: #e6e6e6;
+      font-size: clamp(14px, 2.2vw, 18px);
+      line-height: 1.45;
+      margin-bottom: 28px;
+      max-width: 680px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Botón principal */
+    .btn {
+      display: inline-flex;
+      align-items:center;
+      gap: 10px;
+      text-decoration: none;
+      background: linear-gradient(90deg,#00ff99,#00cc7a);
+      color: #021018;
+      font-weight: 700;
+      padding: 14px 34px;
+      border-radius: 999px;
+      font-size: 18px;
+      transition: transform .18s ease, box-shadow .18s ease;
+      box-shadow: 0 8px 22px rgba(0,204,122,0.18);
+    }
+    .btn:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 14px 36px rgba(0,204,122,0.22); }
+
+    /* Pie pequeño */
+    footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.65);
+    }
+
+    /* Responsive: en móvil centrar y ajustar tamaños */
+    @media (max-width: 520px) {
+      .card { padding: 22px; border-radius: 10px; }
+      .btn { width: 100%; justify-content:center; padding: 12px; font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Fondo e overlay -->
+  <div class="bg" aria-hidden="true"></div>
+  <div class="overlay" aria-hidden="true"></div>
+
+  <main class="container" role="main">
+    <section class="card" aria-labelledby="site-title">
+      <h1 id="site-title">🔥 STAR BET OFICIAL 🔥</h1>
+
+      <p class="lead">
+        Únete a nuestra comunidad y descubre cómo obtener grandes beneficios con estrategias seguras y efectivas.
+        <br>📈 100% online | 💸 Resultados diarios | 🚀 Crecimiento constante
+      </p>
+
+      <a class="btn" href="https://t.me/starbetof1" target="_blank" rel="noopener noreferrer" aria-label="Unirme ahora - abre Telegram">
+        UNIRME AHORA 🚀
+      </a>
+
+      <footer role="contentinfo">© 2025 Star Bet Oficial – Canal exclusivo para miembros mayores de edad.</footer>
+    </section>
+  </main>
+</body>
+</html>
